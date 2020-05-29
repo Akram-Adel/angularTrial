@@ -1,0 +1,54 @@
+.header
+  display: flex
+  background-color: #c2f5aa
+  padding: 0 10px
+  box-shadow: 3px 3px 5px 0px #bdc3c7
+  margin-bottom: 10px
+
+  .img-container
+    flex: 0 0 30%
+    background-image: url('../assets/projects.png')
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+
+  .text-container
+    margin-top: 10px // margin-top: 50px
+    margin-bottom: 10px // margin-bottom: 50px
+    text-align: center
+    font-size: 1em // font-size: 1.8em
+    font-family: sans-serif
+
+.cards-container
+  display: flex
+  flex-wrap: wrap
+  justify-content: center // justify-content: space-between
+
+  app-card
+    margin-bottom: 10px
+
+  > *
+    flex: 0 0 calc(100% - 10px) // flex: 0 0 calc(50% - 5px)
+
+
+@media (min-width: 576px)
+  .header
+    padding: 0 50px
+
+    .text-container
+      margin-top: 30px
+      margin-bottom: 30px
+      font-size: 1.4em
+
+  .cards-container
+    justify-content: space-between
+
+    > *
+      flex: 0 0 calc(50% - 5px)
+
+
+@media (min-width: 768px)
+  .header .text-container
+    margin-top: 50px
+    margin-bottom: 50px
+    font-size: 1.8em

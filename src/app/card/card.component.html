@@ -1,0 +1,15 @@
+<div>
+  <div class="image-container">
+    <div class="sell-container" *ngIf="cardInput.isBuy">
+      <div class="buy">Buy Now</div>
+      <div class="price"><div> {{cardInput.buyPrice}} </div></div>
+    </div>
+    <div class="header"><div> {{cardInput.imgHeader}} </div></div>
+  </div>
+
+  <div class="text-container">
+    <div class="header"> {{cardInput.textHeader}}</div>
+    <div class="numbers">{{cardInput.textNumbers}}</div>
+    <p>{{cardInput.textParagraph}}</p>
+  </div>
+</div>
